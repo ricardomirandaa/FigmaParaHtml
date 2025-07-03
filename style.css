@@ -5,3 +5,175 @@
         --light-color: #E8F7FB;
         --light-blue-color: #6f7dfb;
     }
+
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .wrapper{
+        max-width: 1134px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        padding: 16px 32px;
+        border-radius: 24px;
+        color: white;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        position: relative;
+    }
+
+.btn.dark{
+    background: var(--dark-blue-color);
+}
+
+.btn.light{
+    background: var(--orange-color);
+}
+
+.btn.enrol-icon::before{
+    content: url('imagens/enroll-icon.png');
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+}
+
+.btn.enrol-icon{
+    padding-left: 60px;
+}
+
+header{
+    background: linear-gradient(100deg, #6f7dfb 0%, #26308c 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 36px;
+    z-index: 100;
+}
+
+nav .logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: white;
+    margin-bottom: 0;
+}
+
+.hero-section .left p{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-section .left{
+    width: 457px;
+}
+
+.hero-section .right{
+    align-self: flex-end;
+}
+
+.hero-section .right img{
+    height: 520px;
+    vertical-align: middle;
+}
+
+.achievement-card{
+    position: absolute;
+}
+
+.achievement-card .content{
+    border-radius: 24px;
+    background-color: #fff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: middle;
+}
+
+.achievement-card.students-enroled{
+    left: 47%;
+    top:330px;
+}
+
+.achievement-card h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size:36px;
+    color: var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+}
+
+.achievement-card p{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.achievement-card.bg{
+    position:absolute;
+    height:100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+} 
