@@ -144,7 +144,7 @@ nav ul li a{
     position: middle;
 }
 
-.achievement-card.students-enroled{
+.achievement-card .students-enrolled{
     left: 47%;
     top:330px;
 }
@@ -167,7 +167,7 @@ nav ul li a{
     margin-bottom: 8px;
 }
 
-.achievement-card.bg{
+.achievement-card .bg{
     position:absolute;
     height:100%;
     width: 100%;
