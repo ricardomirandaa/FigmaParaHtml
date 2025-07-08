@@ -128,49 +128,50 @@ nav ul li a{
     align-self: flex-end;
 }
 
-.hero-section .right img{
+.hero-section .right img {
     height: 520px;
     vertical-align: middle;
 }
 
-.achievement-card{
-    position: absolute;
-    min-width: 200px;
+.achievement-cards {
+    position: relative;
+    height: 200px;
 }
 
-.achievement-card .content{
+.achievement-cards .content {
     border-radius: 24px;
     background-color: white;
     padding: 8px 32px;
     position: relative;
+    text-align: center;
 }
 
-.achievement-card .students-enrolled {
+.achievement-cards .students-enrolled {
     left: 47%;
-    top:330px;
+    top: 330px;
 }
 
-.achievement-card .overall-rating {
+.achievement-cards .overall-rating {
     left: 47%;
     top: 470px;
 }
 
-.achievement-card .content div{
+.achievement-cards .content div {
     display: flex;
     align-items: center;
-
 }
 
-.achievement-card h3{
+.achievement-cards h3 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size:36px;
     color: var(--dark-blue-color);
     margin: 0;
     text-align: center;
+    
 }
 
-.achievement-card p{
+.achievement-cards p {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -179,9 +180,9 @@ nav ul li a{
     margin-bottom: 8px;
 }
 
-.achievement-card .bg{
-    position:absolute;
-    height:100%;
+.achievement-cards .bg {
+    position: relative;
+    height: 100%;
     width: 100%;
     background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
     border-radius: 24px;
@@ -189,7 +190,6 @@ nav ul li a{
     left: 8px;
     z-index: 1;
 }
-
 
 section{
     margin: 100px;
@@ -327,6 +327,15 @@ h2 .right{
     border-radius: 24px;
     padding: 0px 32px;
     margin: 40px 0;
+    position: relative;
+}
+
+.courses-section .course-card:last-child {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 0px 32px;
+    margin: 40px 0;
+    position: relative;
 }
 
 .courses-section .course-card ::after {
@@ -334,7 +343,8 @@ h2 .right{
     height: 8px;
     left: 32px;
     right: 32px;
-    background: #023047;
+    position: relative;
+    background: var(--dark-blue-color);
     border-radius: 24px;
 }
 
@@ -358,7 +368,6 @@ h2 .right{
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    white-space: nowrap;
     color: var(--dark-blue-color);
     position: relative;
     padding-left: 20px;
